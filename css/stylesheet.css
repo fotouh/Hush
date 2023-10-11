@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+body {
+  background-color: black;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  box-shadow: #ff0000 0px 5px 15px;
+}
+.logo h1,
+.disc h1 {
+  font-family: "sofia";
+  color: #ff0000;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f,
+    0 0 0.6em #ff0000, 0 0 0.8em #ff0000, 0 0 1em #ff0000, 0 0 1.2em #ff0000;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin-right: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul li {
+  padding: 1rem 0.5rem;
+}
+ul li:hover {
+  border-bottom: 1px solid white;
+}
+ul li:hover a {
+  color: #ff0000;
+}
+
+.disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-image: url("../images/Sumthinclassy4u.jpeg");
+  background-size: 100% 100%;
+  padding-bottom: 2rem;
+}
+.disc h2 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  width: 50%;
+}
+.disc b {
+  font-size: 2rem;
+  margin-left: 1rem;
+  background-color: #ff0000;
+  padding: 0 0.5rem;
+}
+.disc button {
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  width: fit-content;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: #ff0000;
+  color: #f7f;
+  outline: none;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product > h1,
+.brief > h1 {
+  margin: 1rem auto 1.5rem auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  width: fit-content;
+  text-align: center;
+  background-color: #ff0000;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.product > h1:hover,
+.brief > h1:hover {
+  color: #f7f;
+}
+.items {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+.item,
+.item img {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-direction: column-reverse;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  box-shadow: 5px 5px 4px #ff0000;
+}
+.item img {
+  margin-bottom: 0;
+}
+.cap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 0.5rem;
+}
+.cap button {
+  padding: 0rem 0.5rem;
+  height: 2rem;
+  border-radius: 15px;
+  width: 7rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: #ff0000;
+  color: #fff;
+  outline: none;
+}
+.cap button:hover {
+  color: #f7f;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.videos {
+  display: flex;
+  margin-left: 1rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+}
+
+.viddsic {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  box-shadow: 5px 5px 4px #ff0000;
+  overflow: hidden;
+}
+.viddsic:hover video {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.vidbox {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+video {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.logo > li a {
+  background-color: #fff;
+  color: #fff;
+}

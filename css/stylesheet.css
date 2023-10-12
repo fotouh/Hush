@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: none;
 }
 body {
   background-color: black;
@@ -38,7 +37,8 @@ a {
 ul li {
   padding: 1rem 0.5rem;
 }
-ul li:hover {
+ul li:hover a {
+  padding-bottom: 1rem;
   border-bottom: 1px solid white;
 }
 ul li:hover a {
@@ -66,6 +66,7 @@ ul li:hover a {
   padding: 0 0.5rem;
 }
 .disc button {
+  border: none;
   margin-left: 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: 15px;
@@ -102,6 +103,7 @@ ul li:hover a {
 }
 .items {
   margin-left: 1rem;
+  width: 100%;
   display: flex;
   gap: 2rem;
   overflow-x: scroll;
@@ -150,7 +152,13 @@ ul li:hover a {
   box-shadow: 5px 5px 4px #ff0000;
 }
 .item img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
   margin-bottom: 0;
+}
+.item:hover img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .cap {
   display: flex;
@@ -160,6 +168,7 @@ ul li:hover a {
   margin-bottom: 0.5rem;
 }
 .cap button {
+  border: none;
   padding: 0rem 0.5rem;
   height: 2rem;
   border-radius: 15px;
@@ -185,6 +194,7 @@ footer {
   margin-left: 1rem;
   display: flex;
   gap: 1rem;
+  width: 100%;
   overflow-x: scroll;
 }
 
@@ -210,11 +220,28 @@ footer {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
+.vidbox h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 video {
+  margin-top: 1rem;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
+}
+i {
+  font-size: 1.5rem;
 }
 .logo > li a {
   background-color: #fff;
   color: #fff;
+}
+.social li:first-child:hover a {
+  color: blue;
+}
+.social li:nth-child(2):hover a {
+  color: lime;
+}
+.social li:nth-child(3):hover a {
+  color: aqua;
 }
